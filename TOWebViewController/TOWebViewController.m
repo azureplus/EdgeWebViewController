@@ -787,7 +787,7 @@
     
     //If a request handler has been set, check to see if we should go ahead
     if (self.shouldStartLoadRequestHandler)
-        shouldStart = self.shouldStartLoadRequestHandler(request, navigationType);
+        shouldStart = self.shouldStartLoadRequestHandler(webView,request, navigationType);
     
     //TODO: Implement TOModalWebViewController Delegate callback
     

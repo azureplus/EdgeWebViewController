@@ -166,7 +166,7 @@
  An optional block that when set, will have each incoming web load request forwarded to it, and can
  determine whether to let them proceed or not.
  */
-@property (nonatomic,copy)      BOOL (^shouldStartLoadRequestHandler)(NSURLRequest *request, UIWebViewNavigationType navigationType);
+@property (nonatomic,copy)      BOOL (^shouldStartLoadRequestHandler)(UIWebView *webView, NSURLRequest *request, UIWebViewNavigationType navigationType);
 
 /**
 An optional block that when set, will be triggered each time the web view has finished a load operation.
